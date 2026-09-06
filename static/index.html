@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Synax AI — Text to Speech</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Background effects -->
+
+    <div class="background">
+        <div class="orb orb-blue"></div>
+        <div class="orb orb-green"></div>
+        <div class="grid"></div>
+    </div>
+
+
+    <!-- Main -->
+
+    <main class="app">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="logo">
+                    S
+                </div>
+
+                <div>
+                    <h1>Synax<span> AI</span></h1>
+
+                    <p>
+                        Text to Speech
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                Online
+
+            </div>
+
+        </header>
+
+
+        <!-- Main Card -->
+
+        <section class="glass-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        SYNAX VOICE
+                    </span>
+
+                    <h2>
+                        Convert Text to Voice
+                    </h2>
+
+                    <p>
+                        Enter the Text
+                    </p>
+
+                </div>
+
+                <div class="sound-icon">
+                    ♪
+                </div>
+
+            </div>
+
+
+            <!-- Text input -->
+
+            <div class="input-wrapper">
+
+                <textarea
+                    id="textInput"
+                    placeholder="Enter your text here ..."
+                    maxlength="5000"
+                ></textarea>
+
+                <div class="input-footer">
+
+                    <span id="charCount">
+                        0 / 5000
+                    </span>
+
+                    <span>
+                        English
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Generate button -->
+
+            <button
+                id="generateButton"
+                class="generate-button"
+            >
+
+                <span class="button-icon">
+                    ◉
+                </span>
+
+                <span>
+                    Convert Text to Speech 🔀
+                </span>
+
+            </button>
+
+
+            <!-- Status -->
+
+            <div
+                id="ttsStatus"
+                class="status-message"
+            ></div>
+
+
+            <!-- Result -->
+
+            <div
+                id="ttsResult"
+                class="result hidden"
+            >
+
+                <div class="result-title">
+
+                    <span class="success-icon">
+                        ✓
+                    </span>
+
+                    فایل صوتی آماده است
+
+                </div>
+
+
+                <audio
+                    id="audioPlayer"
+                    controls
+                ></audio>
+
+
+                <a
+                    id="downloadButton"
+                    class="download-button"
+                    download
+                >
+
+                    <span>
+                        ↓
+                    </span>
+
+                    دانلود فایل MP3
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <span>
+                Powered by
+            </span>
+
+            <strong>
+                Synax AI
+            </strong>
+
+            <span class="separator">
+                •
+            </span>
+
+            <span>
+                Text to Speech
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
